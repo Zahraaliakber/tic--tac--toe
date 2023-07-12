@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: lightpink;
+}
+body h1{
+    background: plum;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto; /* Center the container horizontally */
+    justify-content: center; /* Center the items horizontally */
+    background: yellowgreen;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #16809252;
+}
+
+/* Rest of the CSS styles remain the same */
+
+
+
+.box:hover {
+    background-color: #e2e2e2;
+}
+
+.box.X {
+    color: #ff5959;
+}
+
+.box.O {
+    color: #598cff;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#playerX-score,
+#playerO-score {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#result {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
